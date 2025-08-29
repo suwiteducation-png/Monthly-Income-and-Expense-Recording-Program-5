@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WealthFlow — รายรับรายจ่าย</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>WealthFlow</h1>
+    <p>ตัวอย่างเว็บสแตติกสำหรับดีพลอยบน Vercel + เชื่อม Supabase</p>
+
+    <div class="card">
+      <h2>สถานะการเชื่อมต่อ</h2>
+      <p id="status">ยังไม่เชื่อมต่อ</p>
+      <button id="btnTest">ทดสอบเชื่อมต่อ</button>
+    </div>
+
+    <div class="card">
+      <h3>ตั้งค่า</h3>
+      <p>แก้ไฟล์ <code>index.html</code> ส่วนด้านล่าง ให้ใส่ค่าโปรเจกต์ของคุณ แล้ว commit & redeploy</p>
+      <pre><code>window.APP_CONFIG = {
+  SUPABASE_URL: "https://YOUR-PROJECT.supabase.co",
+  SUPABASE_ANON_KEY: "YOUR-ANON-KEY"
+};</code></pre>
+    </div>
+  </main>
+
+  <!-- TODO: ใส่ค่าจริงก่อน deploy -->
+  <script>
+    window.APP_CONFIG = {
+      SUPABASE_URL: "https://YOUR-PROJECT.supabase.co",
+      SUPABASE_ANON_KEY: "YOUR-ANON-KEY"
+    };
+  </script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
